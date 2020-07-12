@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Finance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="index.html"><img src="logo.png" id="logo" alt="Finance"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="stockboard.html">Stock Board</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="stockhistory.html">Stock History</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="aboutus.html">About Us</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	<div class="container-fluid">	
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>Stock</th>
+				<th>Open</th>
+				<th>High</th>
+				<th>Low</th>
+				<th>Price</th>
+				<th>Volume</th>
+				<th>Change</th>
+				<th>Change Percent</th>
+			  </tr>
+			</thead>
+			<tbody id="stockboard_body">
+			  <tr>
+				<td>IBM</td>
+				<td id='IBM_Open'></td>
+				<td id='IBM_High'></td>
+				<td id='IBM_Low'></td>
+				<td id='IBM_Price'></td>
+				<td id='IBM_Volume'></td>
+				<td id='IBM_Change'></td>
+				<td id='IBM_ChangePercent'></td>
+			  </tr>
+			  <tr>
+				<td>MSFT</td>
+				<td id='MSFT_Open'></td>
+				<td id='MSFT_High'></td>
+				<td id='MSFT_Low'></td>
+				<td id='MSFT_Price'></td>
+				<td id='MSFT_Volume'></td>
+				<td id='MSFT_Change'></td>
+				<td id='MSFT_ChangePercent'></td>
+			  </tr>
+			  <tr>
+				<td>GOOGL</td>
+				<td id='GOOGL_Open'></td>
+				<td id='GOOGL_High'></td>
+				<td id='GOOGL_Low'></td>
+				<td id='GOOGL_Price'></td>
+				<td id='GOOGL_Volume'></td>
+				<td id='GOOGL_Change'></td>
+				<td id='GOOGL_ChangePercent'></td>
+			  </tr>
+			  <tr>
+				<td>FB</td>
+				<td id='FB_Open'></td>
+				<td id='FB_High'></td>
+				<td id='FB_Low'></td>
+				<td id='FB_Price'></td>
+				<td id='FB_Volume'></td>
+				<td id='FB_Change'></td>
+				<td id='FB_ChangePercent'></td>
+			  </tr>
+			  <tr>
+				<td>TWTR</td>
+				<td id='TWTR_Open'></td>
+				<td id='TWTR_High'></td>
+				<td id='TWTR_Low'></td>
+				<td id='TWTR_Price'></td>
+				<td id='TWTR_Volume'></td>
+				<td id='TWTR_Change'></td>
+				<td id='TWTR_ChangePercent'></td>
+			  </tr>  
+			</tbody>
+		  </table>
+	</div>
+	
+	<div class="footer">
+	  <p>&copy; 2020</p>
+	</div>
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="stockboard.js"></script>
+
+</body>
+</html>
