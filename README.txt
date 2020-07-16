@@ -1,2 +1,0 @@
-- background image from https://www.cpacanada.ca/-/media/site/operational/ec-education-certification/images/g10274-ec.jpg
-- logo design online: https://www.freelogodesign.org/
